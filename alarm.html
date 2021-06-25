@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alarme</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" type="image/png" href="fav_alarm1.png">
+	
+</head>
+<body>
+
+<div id="montreAlarm"> <!-- tous le cadre -->
+	
+	<h1 id="afficheHeur"></h1>
+
+	<p class="afficherAlarmeur"><img src="android-alarm.png" width="20" height="20"> <br> <button class="annuler nonVue">Annuler</button></p>
+
+
+	<div class="alarmCorps nonVue">
+	
+		<form class="alarmReg">
+				<table>
+				<tr>				
+					<td><label>heure :</label></td>
+					<td> <input type="number" name="hr" min="0" max="59"></td>
+				</tr>
+				<tr>
+					<td><label>minute:</label></td>
+					<td><input type="number" name="mn" min="0" max="59"></td>
+				</tr>
+
+			</table>
+		 
+		  
+			<span class="nonvue"> sec : <input type="number" name="sc" min="0" max="59"> </span>
+
+	 	<p id="choixAl">Choisir type d'alarme</p>
+
+		<ul class="listAlarms">
+			<li class="choix">Beep<audio src="alarms/Beep.ogg"></audio></li>
+			<li>ClassicAlarm.ogg<audio src="alarms/ClassicAlarm.ogg"></audio></li>
+			<li>ClockBird<audio src="alarms/ClockBird.ogg"></audio></li>
+			<li>Crow<audio src="alarms/Crow.ogg"></audio></li>
+			<li>Dolphin<audio src="alarms/Dolphin.ogg"></audio></li>
+			<li>GetUp<audio src="alarms/GetUp.ogg"></audio></li>
+			<li>GoodLuck<audio src="alarms/GoodLuck.ogg"></audio></li>
+			<li>GoodMorning<audio src="alarms/GoodMorning.ogg"></audio></li>
+			<li>GoodNewDay<audio src="alarms/GoodNewDay.ogg"></audio></li>
+			<li>MorningBird<audio src="alarms/MorningBird.ogg"></audio></li>
+			<li>MorningSun<audio src="alarms/MorningSun.ogg"></audio></li>
+			<li>MorningSunShine<audio src="alarms/MorningSunShine.ogg"></audio></li>
+			<li>SunshineForest<audio src="alarms/SunshineForest.ogg"></audio></li>
+			<li>TickTack<audio src="alarms/TickTack.ogg"></audio></li>
+		</ul>
+			<button type="submit">ok</button>
+		</form>
+
+	</div>
+	<div class="message"></div>
+	<p class="afficherAlarmeur"><button class="stop">stop</button></p> 
+</div>
+
+
+	<script src="../source_jquery/jquery.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
